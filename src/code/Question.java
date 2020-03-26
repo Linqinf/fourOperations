@@ -1,5 +1,6 @@
 package code;
 
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Random;
@@ -10,17 +11,17 @@ public class Question {
 //        System.out.println(q);
 //        System.out.println(q.isLawful());
         //System.out.println(Question.Test().calculate("97 * 1'14/69 ÷ 0"));
-        HashSet<Question> hashSet = new HashSet<>();
-        Question q1 = new Question();
-        q1.title = "( 3 + 1 - 2 ) * 2";
-        q1.answer = "4";
-        q1.value.add("3");q1.value.add("1");q1.value.add("2");q1.value.add("2");
-        Question q2 = new Question();
-        q2.title = "2 * ( 3 -2 + 1 )";
-        q2.answer = "4";
-        q2.value.add("2");q2.value.add("3");q2.value.add("2");q2.value.add("1");
-        hashSet.add(q1);
-        System.out.println(hashSet.add(q2));
+//        HashSet<Question> hashSet = new HashSet<>();
+//        Question q1 = new Question();
+//        q1.title = "( 3 + 1 - 2 ) * 2";
+//        q1.answer = "4";
+//        q1.value.add("3");q1.value.add("1");q1.value.add("2");q1.value.add("2");
+//        Question q2 = new Question();
+//        q2.title = "2 * ( 3 -2 + 1 )";
+//        q2.answer = "4";
+//        q2.value.add("2");q2.value.add("3");q2.value.add("2");q2.value.add("1");
+//        hashSet.add(q1);
+//        System.out.println(hashSet.add(q2));
     }
     private boolean Lawful = true;//是否合法
     private int bound;//数值最大值
@@ -378,8 +379,7 @@ public class Question {
     }
     @Override
     public String toString() {
-        return "title:  "+title+ " = "+answer+
-                "   "+Lawful;
+        return title+ " = "+answer;
     }
 
     //重写Question类中的两个方法  equals  hashCode
@@ -392,6 +392,9 @@ public class Question {
     }
     @Override
     public boolean equals(Object obj){//比较两个对象是否一致
+        if(answer==null||obj==null){
+            return false;
+        }
         if(this==obj){ //地址一样
             return true;
         }

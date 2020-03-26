@@ -8,27 +8,30 @@ import java.util.Random;
 
 public class Generate {
 
-     Random r = new Random();
-
-     public void allTitle(int titleNumber,int numberBound){ //生成全部的题目
+     public static void allTitle(int titleNumber,int numberBound){ //生成全部的题目
           BufferedWriter writeQuewtion = null;
           BufferedWriter writeAnswer = null;
+         BufferedWriter writeLog = null;
           HashSet<Question> hashSet = new HashSet<>();//hashset去重
           try {
                 writeQuewtion = new BufferedWriter(new FileWriter("src//dbfile//Exercises.txt"));
                 writeAnswer = new BufferedWriter(new FileWriter("src//dbfile//Answers.txt"));
-               for (int i = 0;i<titleNumber;i++){
+                writeLog = new BufferedWriter(new FileWriter("src//dbfile//title+answer.txt"));
+               for (int i = 1;i<=titleNumber;i++){
                    Question question = new Question(numberBound);
                    if(!question.isLawful()&&hashSet.add(question)){//检测式子合法性
                        i--;
                        continue;
                    }
-                   String title = question.getTitle();
-                   String answer = question.getAnswer();
+                   String title = i+".  "+question.getTitle();
+                   String answer = i+".  "+question.getAnswer();
 
-                   System.out.println(question);
+                   System.out.println(i+".  "+question);
 
                    //写入文件
+                   writeLog.write(i+".  "+question.toString()); //写入一条式子
+                   writeLog.newLine();  //换行
+                   writeLog.flush();    //刷新管道
                    writeQuewtion.write(title); //写入一条式子
                    writeQuewtion.newLine();  //换行
                    writeQuewtion.flush();    //刷新管道
