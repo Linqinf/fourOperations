@@ -22,6 +22,7 @@ public class Question {
 //        q2.value.add("2");q2.value.add("3");q2.value.add("2");q2.value.add("1");
 //        hashSet.add(q1);
 //        System.out.println(hashSet.add(q2));
+        System.out.println(Question.Calculator("4 ÷ 2"));
     }
     private boolean Lawful = true;//是否合法
     private int bound;//数值最大值
@@ -32,8 +33,9 @@ public class Question {
     private Question(){
 
     }
-    public static Question Tools(){
-        return new Question();
+    public static String Calculator(String title){//外部调用计算器
+        Question q = new Question();
+        return q.SimplifyFraction(q.calculate(title));
     }
     public Question(int bound){
         char []operator = new char[3];
@@ -211,7 +213,7 @@ public class Question {
         }
         return Fraction;
     }
-    public String calculate(String title) {//计算式子
+    private String calculate(String title) {//计算式子
 
         while ((title.contains("*")||title.contains("÷")||
                 title.contains("+")||title.contains("-"))){//存在运算符
@@ -246,7 +248,9 @@ public class Question {
                 index = Search(Message,"+")>=Search(Message,"-")?Search(Message,"+"):Search(Message,"-");
             }
 
-            if(index==-1)break;//不存在运算符时，运算结束，跳出循环
+            if(index==-1){//不存在运算符时，运算结束，跳出循环
+                break;
+            }
             String[] firstNum = transformFraction(Message[index-1]).split("/");
             String[] secondNum = transformFraction(Message[index+1]).split("/");
 
@@ -359,6 +363,7 @@ public class Question {
                 title += Message[i] + " ";
             }
         }
+
         return title;
     }
 

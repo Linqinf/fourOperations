@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb2fcde-992b-4fb8-a3b5-e894d3e92d38" name="Default Changelist" comment="实现题目自动生成和答案计算功能">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="3eb2fcde-992b-4fb8-a3b5-e894d3e92d38" name="Default Changelist" comment="add 去重功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Generate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Generate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Answers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Exercises.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/title+answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/title+answer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Generate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Generate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dbfile/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/Answers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dbfile/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/Exercises.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dbfile/title+answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/title+answer.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +49,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -154,7 +144,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585191832627</updated>
       <workItem from="1585191834677" duration="7693000" />
-      <workItem from="1585206606761" duration="3962000" />
+      <workItem from="1585206606761" duration="5019000" />
+      <workItem from="1585217069877" duration="1682000" />
     </task>
     <task id="LOCAL-00001" summary="实现题目自动生成和答案计算功能">
       <created>1585199707093</created>
@@ -163,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585199707093</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add 去重功能">
+      <created>1585210760920</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585210760920</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +169,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="实现题目自动生成和答案计算功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现题目自动生成和答案计算功能" />
+    <MESSAGE value="add 去重功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 去重功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585207705516">
@@ -190,33 +189,33 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="517" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1584627199623" />
-    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1585199704914">
+    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1585210758251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585199704914" />
+    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585210758251" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1585200038909">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1585200038909" />
-    <state width="661" height="169" key="GridCell.Tab.0.bottom" timestamp="1585208694395">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1585218779588">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585208694395" />
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585218779588" />
     <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="661" height="169" key="GridCell.Tab.0.center" timestamp="1585208694395">
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1585218779588">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585208694395" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585218779588" />
     <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="661" height="169" key="GridCell.Tab.0.left" timestamp="1585208694395">
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1585218779587">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585208694395" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585218779587" />
     <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="661" height="169" key="GridCell.Tab.0.right" timestamp="1585208694395">
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1585218779588">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="661" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585208694395" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585218779588" />
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1584935453475">
       <screen x="0" y="0" width="1536" height="864" />
@@ -250,15 +249,15 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1584627303134" />
-    <state x="240" y="12" key="SettingsEditor" timestamp="1585192151967">
+    <state x="240" y="12" key="SettingsEditor" timestamp="1585210974628">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="240" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585192151967" />
+    <state x="240" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585210974628" />
     <state x="270" y="14" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1584627342897" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585200011833">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585210798227">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585200011833" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585210798227" />
     <state x="449" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1584938138508">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
