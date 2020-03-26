@@ -13,8 +13,8 @@ public class Test {
 //      System.out.println(a.get(" 4 + 5 + 8 "));
 //      System.out.println(a.size());
 
-      Generate g = new Generate();
-      g.allTitle(10000,100);
-
+//      Generate g = new Generate();
+//      g.allTitle(10000,100);
+      System.out.println(Question.Tools().calculate("( 4 + 5 ) ÷ 2"));
    }
 }
