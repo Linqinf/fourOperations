@@ -8,10 +8,6 @@ import java.util.Random;
 
 public class Question {
     public static void main(String[] args) {
-        //Calculator();
-        Question question = new Question();
-        System.out.println(question.calculate("1/2 - 1"));
-        System.out.println(question.isLawful());
     }
     private boolean Lawful = true;//是否合法
     private int bound;//数值最大值
@@ -213,7 +209,6 @@ public class Question {
                 title.contains("+")||title.contains("-"))&&Lawful){//存在运算符且当前运算仍合法
             int index = -1,start = 0,end = 0;//记录运算符位标，括号的开始与结束位标
             String[] Message = title.split(" ");//分割字符串
-            System.out.println(title);
             //判断是否是负数
             for(int i=0;i<Message.length;i++){
                 //Message[i] = Message[i].replaceAll("\0| ","");

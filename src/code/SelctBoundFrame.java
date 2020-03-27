@@ -1,5 +1,7 @@
 package code;
 
+import code.function.Generate;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

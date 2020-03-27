@@ -1,6 +1,7 @@
 package code;
 
 
+import code.function.Generate;
 import sun.java2d.loops.GeneralRenderer;
 
 public class Test {
