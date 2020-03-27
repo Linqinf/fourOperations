@@ -1,13 +1,17 @@
 package code;
 
 
+import java.awt.image.TileObserver;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Random;
 
 public class Question {
     public static void main(String[] args) {
-
+        //Calculator();
+        Question question = new Question();
+        System.out.println(question.calculate("1/2 - 1"));
+        System.out.println(question.isLawful());
     }
     private boolean Lawful = true;//是否合法
     private int bound;//数值最大值
@@ -115,8 +119,10 @@ public class Question {
         //System.out.println(result);
         //System.out.println(title);
         //生成答案
-        answer = SimplifyFraction(calculate(title));
-        judgeLawful();
+        if(Lawful){
+            answer = SimplifyFraction(calculate(title));
+            judgeLawful();
+        }
     }
     private int Search(String[] strs,String s){//查询与s字符串相同的元素在字符串数组的位置，存在则返回所在下标，不存在则返回-1
         String[] tags = s.split("\\|");
@@ -212,12 +218,18 @@ public class Question {
     private String calculate(String title) {//计算式子
 
         while ((title.contains("*")||title.contains("÷")||
-                title.contains("+")||title.contains("-"))){//存在运算符
+                title.contains("+")||title.contains("-"))&&Lawful){//存在运算符且当前运算仍合法
             int index = -1,start = 0,end = 0;//记录运算符位标，括号的开始与结束位标
             String[] Message = title.split(" ");//分割字符串
-//            for(int i=0;i<Message.length;i++){
-//                Message[i] = Message[i].replaceAll("\0| ","");
-//            }
+            System.out.println(title);
+            //判断是否是负数
+            for(int i=0;i<Message.length;i++){
+                //Message[i] = Message[i].replaceAll("\0| ","");
+                //System.out.println(Message[i]);
+                if(Message[i].length()>1&&Message[i].contains("-")){
+                    Lawful = false;
+                }
+            }
             String temp = null;//将结果替换子表达式
             //记录括号的开始与结束位标
             start = Search(Message,"(");
