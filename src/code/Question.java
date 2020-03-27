@@ -1,16 +1,28 @@
 package code;
 
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Random;
 
 public class Question {
     public static void main(String[] args) {
-        Question q = new Question(100);
-        //System.out.println(Question.Test().calculate("( 5 - 5 ) ÷ 9"));
-
-        System.out.println(q);
-        System.out.println(q.isLawful());
+//        Question q = new Question(100);
+//        System.out.println(q);
+//        System.out.println(q.isLawful());
+        //System.out.println(Question.Test().calculate("97 * 1'14/69 ÷ 0"));
+//        HashSet<Question> hashSet = new HashSet<>();
+//        Question q1 = new Question();
+//        q1.title = "( 3 + 1 - 2 ) * 2";
+//        q1.answer = "4";
+//        q1.value.add("3");q1.value.add("1");q1.value.add("2");q1.value.add("2");
+//        Question q2 = new Question();
+//        q2.title = "2 * ( 3 -2 + 1 )";
+//        q2.answer = "4";
+//        q2.value.add("2");q2.value.add("3");q2.value.add("2");q2.value.add("1");
+//        hashSet.add(q1);
+//        System.out.println(hashSet.add(q2));
+        System.out.println(Question.Calculator("4 ÷ 2"));
     }
     private boolean Lawful = true;//是否合法
     private int bound;//数值最大值
@@ -21,8 +33,9 @@ public class Question {
     private Question(){
 
     }
-    public static Question Test(){
-        return new Question();
+    public static String Calculator(String title){//外部调用计算器
+        Question q = new Question();
+        return q.SimplifyFraction(q.calculate(title));
     }
     public Question(int bound){
         char []operator = new char[3];
@@ -62,9 +75,10 @@ public class Question {
                         } else { //真分数
                             Number[i] = " " + Num1 + "/" + Num2;
                         }
+                        operator[i] = '\0';
+                        Number[i + 1] = "";
                     }
-                    operator[i] = '\0';
-                    Number[i + 1] = "";
+
                     if (i == 1) //如果是第二个运算符为除号，后边不检查第三个运算符的情况了。
                         flag = 2;
                     else
@@ -100,9 +114,21 @@ public class Question {
                 if (operatorNum == 3) result += operator[2] + Number[3]; //无括号
             }
         }
+        //重构字符串
+//        title = "";
+//        String[] Message = result.split("\0| ");
+//        for(int i=0;i<Message.length;i++){
+//            if (Message[i].length() != 0) {
+//                title += Message[i];
+//                if (i != Message.length - 1) {
+//                    title += " ";
+//                }
+//            }
+//        }
         //替换空格处理
         title = result.replaceAll("\0"," ").trim();
-        String[] Msg = title.split(" ");
+        //System.out.println(result);
+        //System.out.println(title);
         //生成答案
         answer = SimplifyFraction(calculate(title));
         judgeLawful();
@@ -126,6 +152,7 @@ public class Question {
         return numerator+"/"+Denominator;
     }
     private String SimplifyFraction(String Fraction) {//将分数化简：假分数转化成真分数，分数的约分
+        Fraction = Fraction.trim();
         int count = 0;//记录进位
         String[] digit = null;//储存分数中每一个数字
         int Denominator = 0 ;//分母
@@ -142,6 +169,10 @@ public class Question {
         Denominator = Integer.parseInt(digit[1]);
         //分数进位操作
         if(numerator>=Denominator){//分子大于或等于分母
+            if (Denominator == 0) {
+                Lawful = false;
+                return null;
+            }
             count += numerator/Denominator;
             numerator = numerator%Denominator;
         }
@@ -182,13 +213,15 @@ public class Question {
         }
         return Fraction;
     }
-    public String calculate(String title) {//计算式子
+    private String calculate(String title) {//计算式子
 
         while ((title.contains("*")||title.contains("÷")||
                 title.contains("+")||title.contains("-"))){//存在运算符
             int index = -1,start = 0,end = 0;//记录运算符位标，括号的开始与结束位标
             String[] Message = title.split(" ");//分割字符串
-
+//            for(int i=0;i<Message.length;i++){
+//                Message[i] = Message[i].replaceAll("\0| ","");
+//            }
             String temp = null;//将结果替换子表达式
             //记录括号的开始与结束位标
             start = Search(Message,"(");
@@ -215,7 +248,9 @@ public class Question {
                 index = Search(Message,"+")>=Search(Message,"-")?Search(Message,"+"):Search(Message,"-");
             }
 
-            if(index==-1)break;//不存在运算符时，运算结束，跳出循环
+            if(index==-1){//不存在运算符时，运算结束，跳出循环
+                break;
+            }
             String[] firstNum = transformFraction(Message[index-1]).split("/");
             String[] secondNum = transformFraction(Message[index+1]).split("/");
 
@@ -328,18 +363,20 @@ public class Question {
                 title += Message[i] + " ";
             }
         }
+
         return title;
     }
 
-    public void judgeLawful(){//判断表达式是否合法
+    private void judgeLawful(){//判断表达式是否合法
 
-        if(answer.contains("-")||answer==null||title==null){//计算结果存在负号
+        if(answer==null||title==null||answer.contains("-")){//计算结果存在负号
             Lawful = false;
+            return;
         }
         if(answer.contains("/")){//结果存在分数
             String[] split = answer.split("/");//分母
             String Denominator = split[split.length-1];
-            if(Integer.parseInt(Denominator)>=bound){
+            if(Integer.parseInt(Denominator)>=bound||Integer.parseInt(Denominator)==0){
                 Lawful = false;
             }
         }
@@ -347,8 +384,7 @@ public class Question {
     }
     @Override
     public String toString() {
-        return "title:  "+title+
-                "\nanswer： "+answer;
+        return title+ " = "+answer;
     }
 
     //重写Question类中的两个方法  equals  hashCode
@@ -361,6 +397,9 @@ public class Question {
     }
     @Override
     public boolean equals(Object obj){//比较两个对象是否一致
+        if(answer==null||obj==null){
+            return false;
+        }
         if(this==obj){ //地址一样
             return true;
         }

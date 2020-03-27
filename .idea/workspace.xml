@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb2fcde-992b-4fb8-a3b5-e894d3e92d38" name="Default Changelist" comment="" />
+    <list default="true" id="3eb2fcde-992b-4fb8-a3b5-e894d3e92d38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/SelctBoundFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/META-INF/自动生成四则运算题目.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/ExamFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/ExamFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Generate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Generate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/QuestionFileReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Answers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Exercises.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/title+answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/title+answer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/ExamFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ExamFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Generate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Generate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/QuestionFileReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbfile/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/Answers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbfile/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/Exercises.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbfile/title+answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/title+answer.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +81,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Test">
+    <configuration name="ExamFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="code.ExamFrame" />
+      <module name="自动生成四则运算题目" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="code.Test" />
       <module name="自动生成四则运算题目" />
@@ -118,6 +145,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ExamFrame" />
       </list>
     </recent_temporary>
   </component>
@@ -140,26 +168,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="517" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1584627199623" />
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1585240282532">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1585240282532" />
     <state x="147" y="69" key="DiffContextDialog" timestamp="1585228660635">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="147" y="69" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1585228660635" />
-    <state width="1493" height="53" key="GridCell.Tab.0.bottom" timestamp="1585214644896">
+    <state width="1493" height="139" key="GridCell.Tab.0.bottom" timestamp="1585305712761">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="53" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585214644896" />
-    <state width="1493" height="53" key="GridCell.Tab.0.center" timestamp="1585214644896">
+    <state width="1493" height="139" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585305712761" />
+    <state width="1493" height="139" key="GridCell.Tab.0.center" timestamp="1585305712760">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="53" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585214644896" />
-    <state width="1493" height="53" key="GridCell.Tab.0.left" timestamp="1585214644896">
+    <state width="1493" height="139" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585305712760" />
+    <state width="1493" height="139" key="GridCell.Tab.0.left" timestamp="1585305712760">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="53" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585214644896" />
-    <state width="1493" height="53" key="GridCell.Tab.0.right" timestamp="1585214644896">
+    <state width="1493" height="139" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585305712760" />
+    <state width="1493" height="139" key="GridCell.Tab.0.right" timestamp="1585305712760">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="53" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585214644896" />
+    <state width="1493" height="139" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585305712760" />
     <state width="1493" height="87" key="GridCell.Tab.1.bottom" timestamp="1585209511800">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -220,9 +252,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1584673139131" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1584928278758">
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1585243989290">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1584928278758" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1585243989290" />
   </component>
 </project>
