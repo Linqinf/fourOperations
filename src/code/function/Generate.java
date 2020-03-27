@@ -1,16 +1,23 @@
-package code;
+package code.function;
+
+import code.function.Question;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Random;
 
 public class Generate {
+    private static ArrayList<Question> questionsBank = new ArrayList<>();//存储题目
+    public ArrayList<Question> getpaper(){
+        return questionsBank;
+    }
 
      public static void allTitle(int titleNumber,int numberBound){ //生成全部的题目
-          BufferedWriter writeQuewtion = null;
-          BufferedWriter writeAnswer = null;
+         questionsBank.clear();
+         BufferedWriter writeQuewtion = null;
+         BufferedWriter writeAnswer = null;
          BufferedWriter writeLog = null;
           HashSet<Question> hashSet = new HashSet<>();//hashset去重
           try {
@@ -23,6 +30,7 @@ public class Generate {
                        i--;
                        continue;
                    }
+                   questionsBank.add(question);
                    String title = i+".  "+question.getTitle();
                    String answer = i+".  "+question.getAnswer();
 
@@ -56,4 +64,5 @@ public class Generate {
           }
 
      }
+
 }

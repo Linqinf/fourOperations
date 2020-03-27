@@ -1,4 +1,4 @@
-package code;
+package code.function;
 
 
 import java.util.ArrayList;
@@ -99,21 +99,10 @@ public class Question {
                 if (operatorNum == 3) result += operator[2] + Number[3]; //无括号
             }
         }
-        //重构字符串
-//        title = "";
-//        String[] Message = result.split("\0| ");
-//        for(int i=0;i<Message.length;i++){
-//            if (Message[i].length() != 0) {
-//                title += Message[i];
-//                if (i != Message.length - 1) {
-//                    title += " ";
-//                }
-//            }
-//        }
+
         //替换空格处理
         title = result.replaceAll("\0"," ").trim();
-        //System.out.println(result);
-        //System.out.println(title);
+
         //生成答案
         answer = SimplifyFraction(calculate(title));
         judgeLawful();
@@ -375,7 +364,6 @@ public class Question {
                 Lawful = false;
             }
         }
-
     }
     @Override
     public String toString() {

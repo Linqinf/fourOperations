@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb2fcde-992b-4fb8-a3b5-e894d3e92d38" name="Default Changelist" comment="add CheckAnswers and perfect calculator">
-      <change afterPath="$PROJECT_DIR$/src/code/CheckAnswers.java" afterDir="false" />
+    <list default="true" id="7d39bbdc-05c9-44c9-984a-9ee5d1443f36" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Answers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Exercises.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/title+answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/title+answer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/SelctBoundFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/SelctBoundFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/SelctBoundFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/SelctBoundFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dbfile/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/Answers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dbfile/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/Exercises.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dbfile/title+answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/title+answer.txt" afterDir="false" />
@@ -21,32 +16,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="ProjectId" id="1ZLk3PILrKFRPMLa3Jgg9U8ajvP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="添加" />
-  </component>
+  <component name="ProjectId" id="1Zi8AKjsUmwKYmfg3sKYBxNudrO" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,279 +27,56 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/dbfile" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="code" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\B学习资料\软件工程\自动生成四则运算题目\src\dbfile" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.CheckAnswers">
-    <configuration name="CheckAnswers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="code.CheckAnswers" />
-      <module name="自动生成四则运算题目" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="code.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="code.CheckQuestions" />
-      <module name="自动生成四则运算题目" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="code.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Question" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="code.Question" />
-      <module name="自动生成四则运算题目" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="code.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="四则运算" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="code.Test" />
       <module name="自动生成四则运算题目" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 8.5.51" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.51" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_51_自动生成四则运算题目" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51962" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="自动生成四则运算题目" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.CheckAnswers" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Question" />
-        <item itemvalue="Application.CheckQuestions" />
-        <item itemvalue="Application.Test" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <created>1585191832627</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1585191832627</updated>
-      <workItem from="1585191834677" duration="7693000" />
-      <workItem from="1585206606761" duration="5019000" />
-      <workItem from="1585217069877" duration="1682000" />
-    </task>
-    <task id="LOCAL-00001" summary="实现题目自动生成和答案计算功能">
-      <created>1585199707093</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1585199707093</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add 去重功能">
-      <created>1585210760920</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1585210760920</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
-    <servers />
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现题目自动生成和答案计算功能" />
-    <MESSAGE value="add 去重功能" />
-    <MESSAGE value="add CheckAnswers and perfect calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="add CheckAnswers and perfect calculator" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#Notifications" timestamp="1585207705516">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1585207705516" />
-    <state x="361" y="91" key="#Project_Structure" timestamp="1584625587913">
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585310649763">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="91" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1584625587913" />
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584627285802">
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1585310649763" />
+    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585310644025">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1584627285802" />
-    <state x="517" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584627199623">
+    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.864@0.0.1536.864" timestamp="1585310644025" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1585311228773">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="517" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1584627199623" />
-    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1585292878380">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585292878380" />
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1585200038909">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1585200038909" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1585292987111">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585292987111" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1585292987111">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585292987111" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1585292987111">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585292987111" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1585292987111">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585292987111" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1585289440220">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585289440220" />
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584935453475" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1585289440220">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585289440220" />
-    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1584935453474" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1585289440220">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585289440220" />
-    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1584935453474" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1585289440220">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585289440220" />
-    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1584935453474" />
-    <state width="1493" height="223" key="GridCell.Tab.2.bottom" timestamp="1584627303134">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585311228773" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1585311228772">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584627303134" />
-    <state width="1493" height="223" key="GridCell.Tab.2.center" timestamp="1584627303134">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585311228772" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1585311228771">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1584627303134" />
-    <state width="1493" height="223" key="GridCell.Tab.2.left" timestamp="1584627303134">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585311228771" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1585311228773">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1584627303134" />
-    <state width="1493" height="223" key="GridCell.Tab.2.right" timestamp="1584627303134">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="223" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1584627303134" />
-    <state x="240" y="12" key="SettingsEditor" timestamp="1585210974628">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="240" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585210974628" />
-    <state x="270" y="14" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1584627342897" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585210798227">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585210798227" />
-    <state x="449" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1584938138508">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="449" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1584938138508" />
-    <state x="425" y="197" key="run.anything.popup" timestamp="1584673139131">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1584673139131" />
-    <state x="383" y="153" width="672" height="572" key="search.everywhere.popup" timestamp="1585209185312">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="383" y="153" width="672" height="572" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585209185312" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1584928278758" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585311228773" />
   </component>
 </project>

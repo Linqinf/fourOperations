@@ -1,16 +1,13 @@
-package code;
+package code.function;
 
 import java.io.*;
 import java.util.ArrayList;
 
 public class CheckAnswers {
-    public static void main(String[] args) {
-        Correct(new File("C:\\5069\\Java\\测试\\e.txt"),new File("C:\\5069\\Java\\测试\\a.txt"));
 
-    }
-    public static void Correct(File exercisefile, File answerfile){
+    public static boolean Correct(File exercisefile, File answerfile){
         if(!exercisefile.isFile()||!answerfile.isFile()){
-            System.out.println("文件错误");
+            return false;
         }
         //统计题号链表
         ArrayList<Integer> correct = new ArrayList<>();
@@ -21,12 +18,9 @@ public class CheckAnswers {
         BufferedWriter gradeWriter = null;
         try {
             int count = 1;
-            //创建文件
-            File outfile = new File(answerfile.getParent()+"\\Correction.txt");
-            outfile.createNewFile();
             exeReader = new BufferedReader(new FileReader(exercisefile));
             ansReader = new BufferedReader(new FileReader(answerfile));
-            gradeWriter = new BufferedWriter(new FileWriter(outfile));
+            gradeWriter = new BufferedWriter(new FileWriter("src//dbfile//Grade.txt"));
 
             //统计答案
             while (true) {
@@ -43,12 +37,10 @@ public class CheckAnswers {
                 if(answer.equals(Question.Calculator(question))
                         &&question.length()!=0&&answer.length()!=0){
                     correct.add(count);
-                    //System.out.println(count+". "+question+" = "+answer+" 正确");
                 }
                 //答案错误
                 else {
                     wrong.add(count);
-                    //System.out.println(question+" = "+answer+" 错误");
                 }
                 count++;
             }
@@ -94,5 +86,6 @@ public class CheckAnswers {
             }
 
         }
+        return true;
     }
 }
