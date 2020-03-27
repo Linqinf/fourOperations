@@ -1,11 +1,12 @@
-package code;
+package code.function;
+
+import code.function.Question;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Random;
 
 public class Generate {
     private static ArrayList<Question> questionsBank = new ArrayList<>();//存储题目
