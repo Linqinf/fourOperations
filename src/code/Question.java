@@ -7,22 +7,7 @@ import java.util.Random;
 
 public class Question {
     public static void main(String[] args) {
-//        Question q = new Question(100);
-//        System.out.println(q);
-//        System.out.println(q.isLawful());
-        //System.out.println(Question.Test().calculate("97 * 1'14/69 ÷ 0"));
-//        HashSet<Question> hashSet = new HashSet<>();
-//        Question q1 = new Question();
-//        q1.title = "( 3 + 1 - 2 ) * 2";
-//        q1.answer = "4";
-//        q1.value.add("3");q1.value.add("1");q1.value.add("2");q1.value.add("2");
-//        Question q2 = new Question();
-//        q2.title = "2 * ( 3 -2 + 1 )";
-//        q2.answer = "4";
-//        q2.value.add("2");q2.value.add("3");q2.value.add("2");q2.value.add("1");
-//        hashSet.add(q1);
-//        System.out.println(hashSet.add(q2));
-        System.out.println(Question.Calculator("4 ÷ 2"));
+
     }
     private boolean Lawful = true;//是否合法
     private int bound;//数值最大值
@@ -134,10 +119,15 @@ public class Question {
         judgeLawful();
     }
     private int Search(String[] strs,String s){//查询与s字符串相同的元素在字符串数组的位置，存在则返回所在下标，不存在则返回-1
+        String[] tags = s.split("\\|");
         int index = -1;//记录下标
-        for(int i=0;i<strs.length;i++){
-            if(strs[i].equals(s))
-                index = i;
+        for(int i=0;i<strs.length&&index==-1;i++){
+            for(String tag : tags){
+                if(strs[i].equals(tag)){
+                    index = i;
+                    break;
+                }
+            }
         }
         return index;
     }
@@ -152,12 +142,14 @@ public class Question {
         return numerator+"/"+Denominator;
     }
     private String SimplifyFraction(String Fraction) {//将分数化简：假分数转化成真分数，分数的约分
+        if (Fraction.contains("("))
+            Fraction = Fraction.replaceAll("\\(|\\)","");
         Fraction = Fraction.trim();
         int count = 0;//记录进位
         String[] digit = null;//储存分数中每一个数字
         int Denominator = 0 ;//分母
         int numerator = 0 ;//分子
-        if(!Fraction.contains("/"))
+        if(!Fraction.contains("/"))//不存在分数,无需化简，直接返回
             return Fraction;
         if(Fraction.contains("'")){
             count = Integer.parseInt(Fraction.split("'")[0]);
@@ -167,6 +159,10 @@ public class Question {
         //生成分子，分母
         numerator = Integer.parseInt(digit[0]);
         Denominator = Integer.parseInt(digit[1]);
+        //分子为0
+        if(numerator==0){
+            return "0";
+        }
         //分数进位操作
         if(numerator>=Denominator){//分子大于或等于分母
             if (Denominator == 0) {
@@ -243,9 +239,9 @@ public class Question {
                 continue;
             }
             //定位运算符，先*、÷后+、-
-            index = Search(Message,"*")>=Search(Message,"÷")?Search(Message,"*"):Search(Message,"÷");
+            index = Search(Message,"*|÷");
             if(index == -1){//式子内没有乘除时
-                index = Search(Message,"+")>=Search(Message,"-")?Search(Message,"+"):Search(Message,"-");
+                index = Search(Message,"+|-");
             }
 
             if(index==-1){//不存在运算符时，运算结束，跳出循环
@@ -303,7 +299,6 @@ public class Question {
                 }
             }
             else if(Message[index].equals("*")){//乘法操作
-
                 if(!Message[index-1].contains("/")&&!Message[index+1].contains("/")){//不存在分数，直接相乘
                     temp = Integer.parseInt(Message[index-1]) * Integer.parseInt(Message[index+1])+"";
 
@@ -369,7 +364,7 @@ public class Question {
 
     private void judgeLawful(){//判断表达式是否合法
 
-        if(answer==null||title==null||answer.contains("-")){//计算结果存在负号
+        if(answer==null||title==null||answer.contains("-")||answer.equals("")||title.equals("")){//计算结果存在负号
             Lawful = false;
             return;
         }

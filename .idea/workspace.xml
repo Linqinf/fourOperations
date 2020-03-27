@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb2fcde-992b-4fb8-a3b5-e894d3e92d38" name="Default Changelist" comment="add 去重功能">
+    <list default="true" id="3eb2fcde-992b-4fb8-a3b5-e894d3e92d38" name="Default Changelist" comment="add CheckAnswers and perfect calculator">
+      <change afterPath="$PROJECT_DIR$/src/code/CheckAnswers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/code/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Answers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/Exercises.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/title+answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/自动生成四则运算题目/dbfile/title+answer.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbfile/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/Answers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbfile/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/Exercises.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbfile/title+answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbfile/title+answer.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +44,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1ZLk3PILrKFRPMLa3Jgg9U8ajvP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,7 +70,33 @@
       <recent name="D:\B学习资料\软件工程\自动生成四则运算题目\src\dbfile" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.CheckAnswers">
+    <configuration name="CheckAnswers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="code.CheckAnswers" />
+      <module name="自动生成四则运算题目" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="code.CheckQuestions" />
+      <module name="自动生成四则运算题目" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Question" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="code.Question" />
       <module name="自动生成四则运算题目" />
@@ -129,10 +166,25 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CheckAnswers" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Question" />
+        <item itemvalue="Application.CheckQuestions" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -170,7 +222,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="实现题目自动生成和答案计算功能" />
     <MESSAGE value="add 去重功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 去重功能" />
+    <MESSAGE value="add CheckAnswers and perfect calculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="add CheckAnswers and perfect calculator" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585207705516">
@@ -189,49 +242,53 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="517" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1584627199623" />
-    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1585210758251">
+    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1585292878380">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585210758251" />
+    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585292878380" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1585200038909">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1585200038909" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1585218779588">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1585292987111">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585218779588" />
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585292987111" />
     <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1585218779588">
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1585292987111">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585218779588" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585292987111" />
     <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1585218779587">
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1585292987111">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585218779587" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585292987111" />
     <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1585218779588">
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1585292987111">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585218779588" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585292987111" />
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1584980458385" />
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1584935453475">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1585289440220">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585289440220" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584935453475" />
-    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1584935453474">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1585289440220">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585289440220" />
     <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1584935453474" />
-    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1584935453474">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1585289440220">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585289440220" />
     <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1584935453474" />
-    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1584935453474">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1585289440220">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585289440220" />
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1584935453474" />
     <state width="1493" height="223" key="GridCell.Tab.2.bottom" timestamp="1584627303134">
       <screen x="0" y="0" width="1536" height="864" />
