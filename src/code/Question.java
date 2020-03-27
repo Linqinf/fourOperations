@@ -148,6 +148,9 @@ public class Question {
         return numerator+"/"+Denominator;
     }
     private String SimplifyFraction(String Fraction) {//将分数化简：假分数转化成真分数，分数的约分
+        if(!Lawful){
+            return null;
+        }
         if (Fraction.contains("("))
             Fraction = Fraction.replaceAll("\\(|\\)","");
         Fraction = Fraction.trim();
