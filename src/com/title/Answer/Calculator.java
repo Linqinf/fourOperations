@@ -6,11 +6,11 @@ public class Calculator {
     private boolean Lawful = true;//缓存当前计算合法性
     OperatorSearcher searcher = new OperatorSearcher();
     public String calculate(String title){
-/*
-        if(title!=null)
-            return null;
-*/
-        return SimplifyFraction(Run(title));
+
+        String result = SimplifyFraction(Run(title));
+        if(result!=null)
+            result = result.trim();
+        return result;
     }
     public String Run(String title){
         Lawful = true;
