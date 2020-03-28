@@ -1,12 +1,13 @@
-package code.view;
+package com.view;
 
-import code.function.Generate;
-import code.function.Question;
+import com.title.Title;
+import com.title.TitleFactory;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.util.ArrayList;
 
 
@@ -20,7 +21,10 @@ public class    ExamFrame extends JFrame  {
         this.addListener();
     }
 
-    private static ArrayList<Question> paper =new Generate().getpaper();//拿到试题
+    private static ArrayList<Title> paper =new TitleFactory(
+            new File(""),
+            new File(""),
+            new File("")).getpaper();//拿到试题
     private int nowNum = 0;//记录当前题目序号
     private int nowPage = 0;//记录当前页数
     private int totalCount = paper.size()/10;//记录试题页数
@@ -160,7 +164,7 @@ public class    ExamFrame extends JFrame  {
                 ExamQuestion[i] = new JLabel();
                 answerField[i] = new JTextField();
             }else{
-                ExamQuestion[i] = new JLabel(paper.get(i).getTitle()+" =");
+                ExamQuestion[i] = new JLabel(paper.get(i).getQuestion()+" =");
                 answerField[i] = new JTextField();
             }
             ExamQuestion[i].setHorizontalAlignment(JLabel.CENTER);
@@ -208,7 +212,7 @@ public class    ExamFrame extends JFrame  {
                         }
                         else {
                             answerField[i].setText(answers[i + nowNum]);
-                            ExamQuestion[i].setText(paper.get(i + nowNum).getTitle() + " =");
+                            ExamQuestion[i].setText(paper.get(i + nowNum).getQuestion() + " =");
                         }
                     }
                 changeBackground();
@@ -227,7 +231,7 @@ public class    ExamFrame extends JFrame  {
                     nowNum -= 10;
                     for (int i = 0; i < 10; i++) {
                         answerField[i].setText(answers[i + nowNum]);
-                        ExamQuestion[i].setText(paper.get(i + nowNum).getTitle() + " =");
+                        ExamQuestion[i].setText(paper.get(i + nowNum).getQuestion() + " =");
                     }
                     changeBackground();
                     nowPageField.setText(nowPage+1+"");

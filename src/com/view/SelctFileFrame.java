@@ -1,6 +1,6 @@
-package code.view;
+package com.view;
 
-import code.function.CheckAnswers;
+import com.title.Answer.CheckAnswers;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,6 +12,7 @@ public class SelctFileFrame extends JFrame {
     private String exercisesFile ="" ;//试题文件路径
     private String answersFile ="" ;//答案文件路径
     private String gradeFile = new File(System.getProperty("user.dir")).getAbsolutePath()+"\\src\\dbfile";
+    private CheckAnswers checkAnswers = new CheckAnswers();
 
     public SelctFileFrame(){
         this.setFontAndSoOn();
@@ -90,7 +91,7 @@ public class SelctFileFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(!answersFile.equals("") && !exercisesFile.equals("")
-                        && CheckAnswers.Correct(new File(exercisesFile),new File(answersFile)))
+                        && checkAnswers.Correct(new File(exercisesFile),new File(answersFile)))
                 {
                     JOptionPane.showMessageDialog(SelctFileFrame.this,"校对成功，结果的文件路径为:"+gradeFile);
                 }
