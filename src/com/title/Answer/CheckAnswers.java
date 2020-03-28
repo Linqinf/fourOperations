@@ -1,11 +1,13 @@
-package code.function;
+package com.title.Answer;
+
 
 import java.io.*;
 import java.util.ArrayList;
 
 public class CheckAnswers {
-
-    public static boolean Correct(File exercisefile, File answerfile){
+    //创建一个计算器
+    private  Calculator calculator = new Calculator();
+    public boolean Correct(File exercisefile, File answerfile){
         if(!exercisefile.isFile()||!answerfile.isFile()){
             return false;
         }
@@ -13,14 +15,20 @@ public class CheckAnswers {
         ArrayList<Integer> correct = new ArrayList<>();
         ArrayList<Integer> wrong = new ArrayList<>();
         //io流
+        File GradeFile = new File(answerfile.getParent()+"//Grade.txt");
         BufferedReader exeReader = null;
         BufferedReader ansReader = null;
         BufferedWriter gradeWriter = null;
+
+
         try {
             int count = 1;
+            if(!GradeFile.exists()){
+                GradeFile.createNewFile();
+            }
             exeReader = new BufferedReader(new FileReader(exercisefile));
             ansReader = new BufferedReader(new FileReader(answerfile));
-            gradeWriter = new BufferedWriter(new FileWriter("src//dbfile//Grade.txt"));
+            gradeWriter = new BufferedWriter(new FileWriter(GradeFile));
 
             //统计答案
             while (true) {
@@ -34,7 +42,7 @@ public class CheckAnswers {
                 Msg = answer.split("\\.");
                 answer = Msg[Msg.length-1].trim();
                 //答案正确
-                if(answer.equals(Question.Calculator(question))
+                if(answer.equals(calculator.calculate(question))
                         &&question.length()!=0&&answer.length()!=0){
                     correct.add(count);
                 }

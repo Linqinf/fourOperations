@@ -1,9 +1,9 @@
-package code.function;
+package com.Test;
 
 
-import code.view.loginFrame;
+import com.view.loginFrame;
 
-public class Test {
+public class TestViewModule {
    public static void main(String[] args){
       new loginFrame();
    }

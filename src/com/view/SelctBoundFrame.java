@@ -1,15 +1,24 @@
-package code;
+package com.view;
 
-import code.function.Generate;
+
+
+import com.title.TitleFactory;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 public class SelctBoundFrame extends JFrame {
     private int titleNumber = 0;//获取试题数量
     private int numberBound = 0;//获取数字范围
+
+    //需要导入路径模块
+    private TitleFactory titleFactory = new TitleFactory(
+            new File(""),
+            new File(""),
+            new File(""));
 
     public SelctBoundFrame(){
             this.setFontAndSoOn();
@@ -82,7 +91,7 @@ public class SelctBoundFrame extends JFrame {
                 titleNumber =  Integer.parseInt(titleNumberField.getText());
                 numberBound = Integer.parseInt(numberBoundField.getText());
                 if(titleNumber>0 && numberBound>0) {
-                    Generate.allTitle(titleNumber, numberBound);
+                    titleFactory.generateAllTitle(titleNumber, numberBound);
                     SelctBoundFrame.this.setVisible(false);//将登录窗口隐藏
                     new ExamFrame();
                 }else {
