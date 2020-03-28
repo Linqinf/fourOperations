@@ -21,15 +21,23 @@ public class TitleFactory {
     File AnswerFile = null;
     File LogFile = null;
 
-    public TitleFactory(File questionFile, File answerFile, File logFile) {
-        QuestionFile = questionFile;
-        AnswerFile = answerFile;
-        LogFile = logFile;
+    public TitleFactory(){
+        QuestionFile = new File("src/dbfile/Exercises.txt");
+        AnswerFile =  new File("src/dbfile/Answers.txt");
+        LogFile =     new File("src/dbfile/title+answer.txt");
     }
+
+    public TitleFactory( String questionFile,String answerFile,String logFile) {
+        QuestionFile = new File(questionFile);
+        AnswerFile = new File(answerFile);
+        LogFile = new File(logFile);
+    }
+
 
     public void generateAllTitle(int titleNumber, int numberBound){
         HashSet<Title> hashSet = new HashSet<>();//hashset去重
         try {
+            TitlesBank.clear();//确保之前的试卷清空
             writeQuestion = new BufferedWriter(new FileWriter(QuestionFile));
             writeAnswer = new BufferedWriter(new FileWriter(AnswerFile));
             writeLog = new BufferedWriter(new FileWriter(LogFile));

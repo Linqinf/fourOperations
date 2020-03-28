@@ -1,5 +1,6 @@
 package com.view;
 
+import com.title.Title;
 import com.title.TitleFactory;
 
 import javax.swing.*;
@@ -7,15 +8,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.util.ArrayList;
 
 public class loginFrame extends JFrame {
     private int titleNumber = 0;//获取试题数量
     private int numberBound = 0;//获取数字范围
     //需要导入路径模块
-    private TitleFactory titleFactory = new TitleFactory(new File(""),
-            new File(""),
-            new File(""));
-
+    private TitleFactory titleFactory = new TitleFactory();
+    private static ArrayList<Title> paper = null;
 
     public loginFrame(){
             this.setFontAndSoOn();
@@ -96,8 +96,9 @@ public class loginFrame extends JFrame {
                     numberBound = Integer.parseInt(numberBoundField.getText());
                     if(titleNumber>0 && numberBound>0) {
                         titleFactory.generateAllTitle(titleNumber, numberBound);
+                        paper = titleFactory.getpaper();
                         loginFrame.this.setVisible(false);//将登录窗口隐藏
-                        new ExamFrame();
+                        new ExamFrame(paper);//将试卷传进去
                     }else {
                         titleNumberField.setText("");
                         numberBoundField.setText("");

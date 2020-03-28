@@ -7,15 +7,9 @@ import java.io.File;
 
 public class TestTitleModule {
     public static void main(String[] args) {
-        TitleFactory titleFactory = new TitleFactory(
-                new File("src/dbfile/Exercises.txt"),
-                new File("src/dbfile/Answers.txt"),
-                new File("src/dbfile/title+answer.txt")
-        );
-        //CheckAnswers checkAnswers = new CheckAnswers();
+        TitleFactory titleFactory = new TitleFactory();
+
         titleFactory.generateAllTitle(10000,100);
-        //checkAnswers.Correct(new File("src/dbfile/Exercises.txt"),new File("src/dbfile/Answers.txt"));
-//        File file = new File("E:\\Java-workspace\\fourOperations-master\\src\\dbfile\\Grade.txt");
-//        System.out.println(file.exists());
+
     }
 }

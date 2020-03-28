@@ -11,9 +11,10 @@ import java.io.File;
 import java.util.ArrayList;
 
 
-public class    ExamFrame extends JFrame  {
+public class   ExamFrame extends JFrame  {
 
-    public ExamFrame(){ //构造方法，顺便初始化
+    public ExamFrame(ArrayList<Title> loginPaper){ //构造方法，顺便初始化
+        paper = loginPaper;
         this.setExamArea();
         this.setElement();
         this.addElement();
@@ -21,17 +22,14 @@ public class    ExamFrame extends JFrame  {
         this.addListener();
     }
 
-    private static ArrayList<Title> paper =new TitleFactory(
-            new File(""),
-            new File(""),
-            new File("")).getpaper();//拿到试题
+    private static ArrayList<Title> paper = null;//在构造方法里拿到试题
     private int nowNum = 0;//记录当前题目序号
     private int nowPage = 0;//记录当前页数
-    private int totalCount = paper.size()/10;//记录试题页数
+    private int totalCount = 0;//记录试题页数
     private int answerCount = 0;//记录已经回答完毕的题目数量
-    private int unanswerCount = paper.size();//记录还没有回答的题目数量
-    private String[] answers = new String[paper.size()];//存储用户答案的数组
-    private int[] answersState = new int[paper.size()];//存储用户答案正确与否的数组,-1为错误，1为正确
+    private int unanswerCount = 0;//记录还没有回答的题目数量
+    private String[] answers = null;//存储用户答案的数组
+    private int[] answersState = null;//存储用户答案正确与否的数组,-1为错误，1为正确
 
 
     private JPanel mainPanel = new JPanel();//负责答题主页面展示
@@ -58,7 +56,7 @@ public class    ExamFrame extends JFrame  {
     private JTextField[] answerField = new JTextField[10];
 
 
-    //设置组件的样式
+    //设置组件的样式,包括数据的初始化
     private  void setElement(){
         //整个页面
         mainPanel.setLayout(null);
@@ -115,14 +113,19 @@ public class    ExamFrame extends JFrame  {
         rightPanel.setLayout(null);
         rightPanel.setBounds(230,10,870,550);
         rightPanel.setBorder(BorderFactory.createLineBorder(Color.GRAY));
+
         //重新设置右侧message中的组件值--用变量控制
+        //数据初始化
         if(paper.size()%10!=0) totalCount++;
+        totalCount = paper.size()/10;
+        unanswerCount = paper.size();
+        answers = new String[paper.size()];
+        answersState = new int[paper.size()];
+
         nowPageField.setText(nowPage+1+"");
         totalCountField.setText(totalCount+"");
         answerCountField.setText(answerCount+"");
         unanswerCountField.setText(unanswerCount+"");
-
-
     }
 
 
