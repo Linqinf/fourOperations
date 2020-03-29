@@ -1,5 +1,9 @@
 package com.Serve;
 
-public class UserServe {
+import com.view.loginFrame;
 
+public class UserServe {
+    public static void main(String[] args) {
+        new loginFrame();
+    }
 }

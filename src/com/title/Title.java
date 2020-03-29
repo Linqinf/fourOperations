@@ -34,7 +34,7 @@ public class Title {
     //想要将Question对象存入HashSet集合内 让set集合帮我们去掉重复元素
     @Override
     public int hashCode(){ //默认hashcode一样
-        return 1;
+        return answer.hashCode();
     }
     @Override
     public boolean equals(Object obj){//比较两个对象是否一致
