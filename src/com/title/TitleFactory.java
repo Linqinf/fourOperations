@@ -53,7 +53,7 @@ public class TitleFactory {
                 String question = title.getQuestion();
                 String answer = title.getAnswer();
 
-                System.out.println(i+".  "+question+" = "+answer);
+                //System.out.println(i+".  "+question+" = "+answer);
 
                 //写入文件
                 writeLog.write(i+".  "+title.toString()); //写入一条式子
