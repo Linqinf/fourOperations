@@ -81,7 +81,7 @@ public class SelctFileFrame extends JFrame {
                 int option = fileChooser.showOpenDialog(null);
                 if(option == JFileChooser.APPROVE_OPTION){
                     answersFile =fileChooser.getSelectedFile().getAbsolutePath();
-                    answersButton.setText(exercisesFile);
+                    answersButton.setText(answersFile);
                     answersButton.setFont(new Font("黑体",Font.BOLD,16));
                 }
             }

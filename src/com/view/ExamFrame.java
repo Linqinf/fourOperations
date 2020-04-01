@@ -69,7 +69,7 @@ public class   ExamFrame extends JFrame  {
 
         nowPageLabel.setBounds(20,30,100,30);
         nowPageLabel.setFont(new Font("黑体",Font.PLAIN,20));
-        nowPageField.setBounds(120,30,50,30);
+        nowPageField.setBounds(120,30,60,30);
         nowPageField.setFont(new Font("黑体",Font.BOLD,20));
         nowPageField.setBorder(BorderFactory.createLineBorder(Color.GRAY));
         nowPageField.setEnabled(false);
@@ -77,7 +77,7 @@ public class   ExamFrame extends JFrame  {
 
         totalCountLabel.setBounds(20,70,100,30);
         totalCountLabel.setFont(new Font("黑体",Font.PLAIN,20));
-        totalCountField.setBounds(120,70,50,30);
+        totalCountField.setBounds(120,70,60,30);
         totalCountField.setFont(new Font("黑体",Font.BOLD,20));
         totalCountField.setBorder(BorderFactory.createLineBorder(Color.GRAY));
         totalCountField.setEnabled(false);
@@ -85,7 +85,7 @@ public class   ExamFrame extends JFrame  {
 
         answerCountLabel.setBounds(20,110,100,30);
         answerCountLabel.setFont(new Font("黑体",Font.PLAIN,20));
-        answerCountField.setBounds(120,110,50,30);
+        answerCountField.setBounds(120,110,60,30);
         answerCountField.setFont(new Font("黑体",Font.BOLD,20));
         answerCountField.setBorder(BorderFactory.createLineBorder(Color.GRAY));
         answerCountField.setEnabled(false);
@@ -93,7 +93,7 @@ public class   ExamFrame extends JFrame  {
 
         unanswerCountLabel.setBounds(20,150,100,30);
         unanswerCountLabel.setFont(new Font("黑体",Font.PLAIN,20));
-        unanswerCountField.setBounds(120,150,50,30);
+        unanswerCountField.setBounds(120,150,60,30);
         unanswerCountField.setFont(new Font("黑体",Font.BOLD,20));
         unanswerCountField.setBorder(BorderFactory.createLineBorder(Color.GRAY));
         unanswerCountField.setEnabled(false);

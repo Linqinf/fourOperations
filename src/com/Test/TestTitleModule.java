@@ -1,16 +1,21 @@
 package com.Test;
 
 import com.title.Answer.CheckAnswers;
+import com.title.Title;
 import com.title.TitleFactory;
+import com.view.ExamFrame;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class TestTitleModule {
     public static void main(String[] args) {
-        long time1 = System.currentTimeMillis();
-        TitleFactory titleFactory = new TitleFactory();
-        titleFactory.generateAllTitle(10000,100);
-        long time2 = System.currentTimeMillis();
-        System.out.println(time2-time1);
+//        ArrayList<Title> paper = null;
+//        TitleFactory titleFactory = new TitleFactory();
+//        titleFactory.generateAllTitle(10000,100);
+//        paper = titleFactory.getpaper();
+//        new ExamFrame(paper);
+
+
     }
 }
